@@ -1,3 +1,2 @@
 # Practice
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub).
-As well as AlgoExpert questions!
+LeetCode and AlgoExpert questions with Jest testing!

@@ -1,0 +1,22 @@
+{
+  "name": "leetcode-algoexpert-practice",
+  "version": "1.0.0",
+  "description": "practice problems and testing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bry-beep/LeetCode-AlgoExpert-Practice.git"
+  },
+  "author": "Bryanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bry-beep/LeetCode-AlgoExpert-Practice/issues"
+  },
+  "homepage": "https://github.com/bry-beep/LeetCode-AlgoExpert-Practice#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
