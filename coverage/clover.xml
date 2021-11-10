@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636434507880" clover="3.2.0">
-  <project timestamp="1636434507881" name="All files">
-    <metrics statements="20" coveredstatements="20" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3" elements="35" coveredelements="35" complexity="0" loc="20" ncloc="20" packages="1" files="2" classes="2"/>
+<coverage generated="1636506722012" clover="3.2.0">
+  <project timestamp="1636506722013" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3" elements="37" coveredelements="37" complexity="0" loc="20" ncloc="20" packages="1" files="2" classes="2"/>
     <file name="generateParentheses.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/generateParentheses.js">
-      <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
       <line num="7" count="25" type="cond" truecount="4" falsecount="0"/>
       <line num="8" count="6" type="stmt"/>
       <line num="10" count="25" type="cond" truecount="2" falsecount="0"/>
       <line num="11" count="9" type="stmt"/>
       <line num="13" count="25" type="cond" truecount="2" falsecount="0"/>
       <line num="14" count="14" type="stmt"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
+      <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="4" type="stmt"/>
       <line num="21" count="1" type="stmt"/>
     </file>
     <file name="twoNumberSum.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/twoNumberSum.js">

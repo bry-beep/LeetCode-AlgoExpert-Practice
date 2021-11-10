@@ -5,7 +5,7 @@
 
   const strBuilder = (str, openCount, closeCount, canCloseCount) => {
       if (openCount === 0 && closeCount === 0) {
-          answer.push(str);
+        answer.push(str);
       }
       if (openCount) {
         strBuilder(str + "(", openCount-1, closeCount, canCloseCount+1);
@@ -14,7 +14,7 @@
         strBuilder(str + ")", openCount, closeCount-1, canCloseCount-1);
       }
   }
-  strBuilder("" , n, n, 0);
+  n > 0 ? strBuilder("" , n, n, 0) : null;
   return answer;
 };
 
