@@ -1,2 +1,2 @@
 # Practice
-LeetCode and AlgoExpert questions with Jest testing!
+LeetCode and AlgoExpert questions with Jest unit testing!
