@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for classPhotos.js</title>
+    <title>Code coverage report for removeKthNodeFromEnd.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> classPhotos.js</h1>
+        <h1><a href="index.html">All files</a> removeKthNodeFromEnd.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -32,7 +32,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -82,56 +82,59 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* all students wearing red must be in the same row, all students wearing blue must be in the same row, and each student in the back row must be strictly taller than the student directly in front of them. There are at most 2 rows of students and each class has at least 2 students. Write a function that returns whether or not a class photo can be taken. */
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* write a function that takes in the head of a singly linked list and an integer k and removes the kth node from the end of the list. The removal should be done in place and the input head of the linked list should remain the head of the linked list after removal is done. */
 &nbsp;
-function classPhotos(redShirtHeights, blueShirtHeights) {
-	redShirtHeights.sort();
-	blueShirtHeights.sort();
-	let tall;
-	let short;
-	if (redShirtHeights[0] &gt; blueShirtHeights[0]) {
-		tall = redShirtHeights;
-		short = blueShirtHeights;
-	} else if (redShirtHeights[0] &lt; blueShirtHeights[0]) {
-		tall = blueShirtHeights;
-		short = redShirtHeights;
-	} else {
-		return false;
+function removeKthNodeFromEnd(head, k) {
+	let remove = head;
+	let ahead = head;
+	//count out to k
+	for (let i = 1; i &lt;= k; i++) {
+		ahead = ahead.next;
 	}
-	for (let i = 0; i &lt; tall.length; i++) {
-		if (tall[i] &lt; short[i]) {
-			return false;
-		}
+	//if the head is the kth node
+	if (ahead === null) {
+		head.value = head.next.value;
+		head.next = head.next.next;
+		return head;
 	}
-  return true;
+	//reverse count using ahead
+	while (ahead.next !== null) {
+		ahead = ahead.next;
+		remove = remove.next;
+	}
+	remove.next = remove.next.next;
+  //adding return to play with jest testing
+  return head;
 }
 &nbsp;
-module.exports = classPhotos;
+module.exports = removeKthNodeFromEnd;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
