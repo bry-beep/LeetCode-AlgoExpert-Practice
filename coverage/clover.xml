@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636748170341" clover="3.2.0">
-  <project timestamp="1636748170341" name="All files">
-    <metrics statements="70" coveredstatements="69" conditionals="40" coveredconditionals="36" methods="7" coveredmethods="7" elements="117" coveredelements="112" complexity="0" loc="70" ncloc="70" packages="1" files="6" classes="6"/>
+<coverage generated="1636755174248" clover="3.2.0">
+  <project timestamp="1636755174248" name="All files">
+    <metrics statements="80" coveredstatements="79" conditionals="40" coveredconditionals="36" methods="11" coveredmethods="11" elements="131" coveredelements="126" complexity="0" loc="80" ncloc="80" packages="1" files="8" classes="8"/>
     <file name="classPhotos.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/classPhotos.js">
       <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="4" count="5" type="stmt"/>
@@ -53,6 +53,14 @@
       <line num="27" count="4" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
     </file>
+    <file name="getTotalPrice.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/getTotalPrice.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+    </file>
     <file name="removeKthNodeFromEnd.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/removeKthNodeFromEnd.js">
       <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="4" count="2" type="stmt"/>
@@ -69,6 +77,14 @@
       <line num="21" count="1" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
       <line num="26" count="1" type="stmt"/>
+    </file>
+    <file name="toArray.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/toArray.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="6" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
     </file>
     <file name="twoNumberSum.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/twoNumberSum.js">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
