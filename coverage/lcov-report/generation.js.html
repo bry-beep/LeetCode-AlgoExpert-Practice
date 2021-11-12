@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for removeKthNodeFromEnd.js</title>
+    <title>Code coverage report for generation.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> removeKthNodeFromEnd.js</h1>
+        <h1><a href="index.html">All files</a> generation.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>12/16</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
@@ -83,58 +83,70 @@
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* write a function that takes in the head of a singly linked list and an integer k and removes the kth node from the end of the list. The removal should be done in place and the input head of the linked list should remain the head of the linked list after removal is done. */
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* create a function that takes a number x and a character y ("m" for male, "f" for female), and returns the name of an ancestor (m/f) or descendant (m/f).
 &nbsp;
-function removeKthNodeFromEnd(head, k) {
-	let remove = head;
-	let ahead = head;
-	//count out to k
-	for (let i = 1; i &lt;= k; i++) {
-		ahead = ahead.next;
+If the number is negative, return the related ancestor.
+If positive, return the related descendant.
+You are generation 0. In the case of 0 (male or female), return "me!". */
+&nbsp;
+function generation(x, y) {
+	const options = ['m', 'f'];
+	<span class="missing-if-branch" title="if path not taken" >I</span>if (!options.includes(y)) {
+<span class="cstat-no" title="statement not covered" >		throw 'invalid y value'</span>
 	}
-	//if the head is the kth node
-	if (ahead === null) {
-		head.value = head.next.value;
-		head.next = head.next.next;
-		return head;
+  if (x === 0) {
+		return 'me!';
 	}
-	//reverse count using ahead
-	while (ahead.next !== null) {
-		ahead = ahead.next;
-		remove = remove.next;
+	let name = '';
+	if (Math.abs(x) === 3) {
+		name += 'great ';
 	}
-	remove.next = remove.next.next;
-  //adding return to play with jest testing
-  return head;
+  if (Math.abs(x) &gt; 1) {
+		name += 'grand';
+	}
+  if (y === 'm') {
+		name += x &lt; 0 ? 'father' : <span class="branch-1 cbranch-no" title="branch not covered" >'son';</span>
+	} else if (y === 'f') {
+		name += x &lt; 0 ? <span class="branch-0 cbranch-no" title="branch not covered" >'mother' </span>: 'daughter';
+	}
+	return name;
 }
 &nbsp;
-module.exports = removeKthNodeFromEnd;
+module.exports = generation;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
