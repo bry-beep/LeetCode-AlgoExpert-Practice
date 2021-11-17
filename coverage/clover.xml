@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636755174248" clover="3.2.0">
-  <project timestamp="1636755174248" name="All files">
+<coverage generated="1637021694041" clover="3.2.0">
+  <project timestamp="1637021694041" name="All files">
     <metrics statements="80" coveredstatements="79" conditionals="40" coveredconditionals="36" methods="11" coveredmethods="11" elements="131" coveredelements="126" complexity="0" loc="80" ncloc="80" packages="1" files="8" classes="8"/>
     <file name="classPhotos.js" path="/Users/bryanna/Desktop/Xtra/LeetCode-AlgoExpert-Practice/classPhotos.js">
       <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
