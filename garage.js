@@ -12,7 +12,7 @@ class ParkingGarage {
   }
 
   addCar(lisencePlateNum) {
-    if (this.carCount !== CAR_LIMIT) {
+    if (this.carCount !== this.CAR_LIMIT) {
       let start = {start: new Date()};
       this.cars[lisencePlateNum] = start;
       this.carCount++;
@@ -36,18 +36,10 @@ class ParkingGarage {
     if (this.cars[lisencePlateNum].start !== undefined) {
       console.log('This car is still parked!');
     } else {
-       return this.cars[lisencePlateNum] * HOURLY_RATE_IN_DOLLARS;
+       return this.cars[lisencePlateNum] * this.HOURLY_RATE_IN_DOLLARS;
     }
   }
 
 }
-
-const garage = new ParkingGarage();
-garage.addCar(5);
-garage.addCar(2);
-garage.removeCar(5);
-console.log(garage.getCarCount());
-garage.calcFee(5);
-garage.calcFee(2);
 
 module.exports = ParkingGarage;
